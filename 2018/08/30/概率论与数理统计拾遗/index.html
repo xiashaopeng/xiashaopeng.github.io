@@ -102,7 +102,7 @@
 <meta property="og:description" content="全概率公式与贝叶斯公式（古典概型）1. 全概率公式 $P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$     其中，$B_1,B_2,…,B_n​$是样本空间$S​$的一个划分，所谓划分是指，$B_1…B_n​$将$S​$完全划分且互相不重叠。全概率公式可以用一个图来清晰的表示：    另外，正如图中所述，在运用全概率公式时，关键是构">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://raw.githubusercontent.com/xiashaopeng/picturesStorage/master/dir/1.png">
-<meta property="og:updated_time" content="2018-08-29T17:30:21.453Z">
+<meta property="og:updated_time" content="2018-08-30T01:13:23.674Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="概率论与数理统计拾遗">
 <meta name="twitter:description" content="全概率公式与贝叶斯公式（古典概型）1. 全概率公式 $P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$     其中，$B_1,B_2,…,B_n​$是样本空间$S​$的一个划分，所谓划分是指，$B_1…B_n​$将$S​$完全划分且互相不重叠。全概率公式可以用一个图来清晰的表示：    另外，正如图中所述，在运用全概率公式时，关键是构">
@@ -345,7 +345,7 @@
 </blockquote>
 <h3 id="3-算例分析"><a href="#3-算例分析" class="headerlink" title="3. 算例分析"></a>3. 算例分析</h3><ul>
 <li><p><strong>例1： 有甲乙两盒，甲盒有3个红球，2个白球；乙盒有2个红球，1个白球。先从甲盒中采用不放回抽样取3个球放入乙盒，再从乙盒中取一个球，求取到的是红球的概率。</strong></p>
-<p><em>++解析：该问题是一个典型的全概率公式的应用场景，即已知条件概率求总概率。++</em></p>
+<p><em>解析：该问题是一个典型的全概率公式的应用场景，即已知条件概率求总概率。</em></p>
 <p>事件$A$: 在乙盒中取到红球；<br>事件$B$: 从甲盒取出三个球到乙盒；</p>
 <pre><code>其中，事件$B$可以做划分：
 事件$B_1$: 取出的三个均为红球； $P(B_1)=\frac{1}{C_5^3}=\frac{1}{10}$
@@ -355,15 +355,19 @@
 <p>因此，最后根据全概率公式，我们可以得到A发生的概率为<br>$P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+P(A|B_3)P(B_3)=\frac{19}{30}$</p>
 </li>
 <li><p><strong>例2: 根据以往的临床记录，某种诊断癌症的试验具有5%的假阳性及3%的假阴性：<br>若设A={试验反应是阳性}，C={被诊断患有癌症}，则有：$P(A|\overline{C})=5\%$, $P(\overline{A}|C)=3\%$<br>已知某一群体$P(C)=0.005$，问这种方法能否用于普查？</strong></p>
-<p><em>++解析：该问题是典型的Balyers公式的应用场景，问题的意思是要求求解诊断正确的概率，即求解$P(C|A)$++</em></p>
+<p><em>解析：该问题是典型的Balyers公式的应用场景，问题的意思是要求求解诊断正确的概率，即求解$P(C|A)$</em></p>
 <p>根据Balyers公式，则有$P(C|A)=\frac{P(C)<em>P(A|C)}{P(A|C)</em>P(C) + P({A}|\overline{C})*P(\overline C)}$<br>其中，$P(C)=0.005$，$P(\overline C)=0.995$，$P(A|\overline C)=0.05$，$P(A|C)=0.97$，带入上述Balyers公式，可得最终结果<br>$P(C|A)=0.089=8.9\%$，这意味着确诊癌症的正确性只有8.9%，说明该方法在该群体中无法用于普查。</p>
 </li>
 </ul>
 <hr>
 <h2 id="独立事件"><a href="#独立事件" class="headerlink" title="独立事件"></a>独立事件</h2><p><strong>两两独立</strong>并不等价于<strong>相互独立</strong><br><strong>实际推断原理</strong>：对于概率很小的事件，单次试验中几乎是不发生的。</p>
+<font color="red" size="3" face="黑体"><strong>待补充</strong></font>
+
 <hr>
-<h2 id="离散型随机变量"><a href="#离散型随机变量" class="headerlink" title="离散型随机变量"></a>离散型随机变量</h2><h3 id="二项分布"><a href="#二项分布" class="headerlink" title="二项分布"></a>二项分布</h3><h3 id="泊松分布"><a href="#泊松分布" class="headerlink" title="泊松分布"></a>泊松分布</h3><hr>
-<h2 id="概率分布函数"><a href="#概率分布函数" class="headerlink" title="概率分布函数"></a>概率分布函数</h2>
+<h2 id="离散型随机变量"><a href="#离散型随机变量" class="headerlink" title="离散型随机变量"></a>离散型随机变量</h2><h3 id="二项分布"><a href="#二项分布" class="headerlink" title="二项分布"></a>二项分布</h3><h3 id="泊松分布"><a href="#泊松分布" class="headerlink" title="泊松分布"></a>泊松分布</h3><font color="red" size="3" face="黑体"><strong>待补充</strong></font>
+
+<hr>
+<h2 id="概率分布函数"><a href="#概率分布函数" class="headerlink" title="概率分布函数"></a>概率分布函数</h2><font color="red" size="3" face="黑体"><strong>待补充</strong></font>
       
     </div>
     

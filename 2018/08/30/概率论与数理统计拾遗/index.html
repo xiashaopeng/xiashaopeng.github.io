@@ -102,7 +102,7 @@
 <meta property="og:description" content="全概率公式与贝叶斯公式（古典概型）1. 全概率公式 $P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$     其中，$B_1,B_2,…,B_n​$是样本空间$S​$的一个划分，所谓划分是指，$B_1…B_n​$将$S​$完全划分且互相不重叠。全概率公式可以用一个图来清晰的表示：    另外，正如图中所述，在运用全概率公式时，关键是构">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://raw.githubusercontent.com/xiashaopeng/picturesStorage/master/dir/1.png">
-<meta property="og:updated_time" content="2018-08-30T01:13:23.674Z">
+<meta property="og:updated_time" content="2018-08-30T01:19:18.174Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="概率论与数理统计拾遗">
 <meta name="twitter:description" content="全概率公式与贝叶斯公式（古典概型）1. 全概率公式 $P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$     其中，$B_1,B_2,…,B_n​$是样本空间$S​$的一个划分，所谓划分是指，$B_1…B_n​$将$S​$完全划分且互相不重叠。全概率公式可以用一个图来清晰的表示：    另外，正如图中所述，在运用全概率公式时，关键是构">
@@ -356,7 +356,7 @@
 </li>
 <li><p><strong>例2: 根据以往的临床记录，某种诊断癌症的试验具有5%的假阳性及3%的假阴性：<br>若设A={试验反应是阳性}，C={被诊断患有癌症}，则有：$P(A|\overline{C})=5\%$, $P(\overline{A}|C)=3\%$<br>已知某一群体$P(C)=0.005$，问这种方法能否用于普查？</strong></p>
 <p><em>解析：该问题是典型的Balyers公式的应用场景，问题的意思是要求求解诊断正确的概率，即求解$P(C|A)$</em></p>
-<p>根据Balyers公式，则有$P(C|A)=\frac{P(C)<em>P(A|C)}{P(A|C)</em>P(C) + P({A}|\overline{C})*P(\overline C)}$<br>其中，$P(C)=0.005$，$P(\overline C)=0.995$，$P(A|\overline C)=0.05$，$P(A|C)=0.97$，带入上述Balyers公式，可得最终结果<br>$P(C|A)=0.089=8.9\%$，这意味着确诊癌症的正确性只有8.9%，说明该方法在该群体中无法用于普查。</p>
+<p>根据Balyers公式，则有$P(C|A)=\frac{P(C)<em>P(A|C)}{P(A|C)</em>P(C) + P({A}|\overline{C})*P(\overline{C})}$。其中，$P(C)=0.005$，$P(\overline{C})=0.995$，$P(A|\overline{C})=0.05$，$P(A|C)=0.97$，带入上述Balyers公式，可得最终结果$P(C|A)=0.089=8.9\%$，这意味着确诊癌症的正确性只有8.9%，说明该方法在该群体中无法用于普查。</p>
 </li>
 </ul>
 <hr>

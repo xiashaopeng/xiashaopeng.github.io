@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="math," />
+  <meta name="keywords" content="machine learning," />
 
 
 
@@ -94,20 +94,18 @@
 
 
 
-<meta name="description" content="全概率公式与贝叶斯公式（古典概型）1. 全概率公式 $P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$     其中，$B_1,B_2,…,B_n​$是样本空间$S​$的一个划分，所谓划分是指，$B_1…B_n​$将$S​$完全划分且互相不重叠。全概率公式可以用一个图来清晰的表示：    另外，正如图中所述，在运用全概率公式时，关键是构">
-<meta name="keywords" content="math">
+<meta name="description" content="(摘自 $cn.Wikipedia$ ，用于自己的学习归纳) 什么是机器学习“机器学习是人工智能的一个分支。人工智能的研究历史有着一条从以“推理”为重点，到以“知识”为重点，再到以“学习”为重点的自然、清晰的脉络。显然，机器学习是实现人工智能的一个途径，即以机器学习为手段解决人工智能中的问题。机器学习在近30多年已发展为一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、计算复杂性理论等多门学">
+<meta name="keywords" content="machine learning">
 <meta property="og:type" content="article">
-<meta property="og:title" content="概率论与数理统计拾遗">
-<meta property="og:url" content="https://xiashaopeng.github.io/数学拾遗/2018/08/30/概率论与数理统计拾遗/index.html">
+<meta property="og:title" content="机器学习简介">
+<meta property="og:url" content="https://xiashaopeng.github.io/机器学习/2018/09/03/机器学习之监督学习/index.html">
 <meta property="og:site_name" content="垄上">
-<meta property="og:description" content="全概率公式与贝叶斯公式（古典概型）1. 全概率公式 $P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$     其中，$B_1,B_2,…,B_n​$是样本空间$S​$的一个划分，所谓划分是指，$B_1…B_n​$将$S​$完全划分且互相不重叠。全概率公式可以用一个图来清晰的表示：    另外，正如图中所述，在运用全概率公式时，关键是构">
+<meta property="og:description" content="(摘自 $cn.Wikipedia$ ，用于自己的学习归纳) 什么是机器学习“机器学习是人工智能的一个分支。人工智能的研究历史有着一条从以“推理”为重点，到以“知识”为重点，再到以“学习”为重点的自然、清晰的脉络。显然，机器学习是实现人工智能的一个途径，即以机器学习为手段解决人工智能中的问题。机器学习在近30多年已发展为一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、计算复杂性理论等多门学">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/xiashaopeng/picturesStorage/master/dir/1.png">
-<meta property="og:updated_time" content="2018-09-03T12:00:46.030Z">
+<meta property="og:updated_time" content="2018-09-06T01:36:33.988Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="概率论与数理统计拾遗">
-<meta name="twitter:description" content="全概率公式与贝叶斯公式（古典概型）1. 全概率公式 $P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$     其中，$B_1,B_2,…,B_n​$是样本空间$S​$的一个划分，所谓划分是指，$B_1…B_n​$将$S​$完全划分且互相不重叠。全概率公式可以用一个图来清晰的表示：    另外，正如图中所述，在运用全概率公式时，关键是构">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/xiashaopeng/picturesStorage/master/dir/1.png">
+<meta name="twitter:title" content="机器学习简介">
+<meta name="twitter:description" content="(摘自 $cn.Wikipedia$ ，用于自己的学习归纳) 什么是机器学习“机器学习是人工智能的一个分支。人工智能的研究历史有着一条从以“推理”为重点，到以“知识”为重点，再到以“学习”为重点的自然、清晰的脉络。显然，机器学习是实现人工智能的一个途径，即以机器学习为手段解决人工智能中的问题。机器学习在近30多年已发展为一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、计算复杂性理论等多门学">
 
 
 
@@ -136,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://xiashaopeng.github.io/数学拾遗/2018/08/30/概率论与数理统计拾遗/"/>
+  <link rel="canonical" href="https://xiashaopeng.github.io/机器学习/2018/09/03/机器学习之监督学习/"/>
 
 
 
 
 
-  <title>概率论与数理统计拾遗 | 垄上</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>机器学习简介 | 垄上</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -275,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://xiashaopeng.github.io/数学拾遗/2018/08/30/概率论与数理统计拾遗/">
+    <link itemprop="mainEntityOfPage" href="https://xiashaopeng.github.io/机器学习/2018/09/03/机器学习之监督学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="行走人">
@@ -292,7 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">概率论与数理统计拾遗</h1>
+          <h1 class="post-title" itemprop="name headline">机器学习简介</h1>
         
 
         <div class="post-meta">
@@ -304,8 +302,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-30T01:13:15+08:00">
-                2018-08-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-03T20:13:40+08:00">
+                2018-09-03
               </time>
             
 
@@ -327,8 +325,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数学拾遗/" itemprop="url" rel="index">
-                    <span itemprop="name">数学拾遗</span>
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
                   </a>
                 </span>
 
@@ -364,43 +362,58 @@
       
 
       
-        <h2 id="全概率公式与贝叶斯公式（古典概型）"><a href="#全概率公式与贝叶斯公式（古典概型）" class="headerlink" title="全概率公式与贝叶斯公式（古典概型）"></a>全概率公式与贝叶斯公式（古典概型）</h2><h3 id="1-全概率公式"><a href="#1-全概率公式" class="headerlink" title="1. 全概率公式"></a>1. 全概率公式</h3><blockquote>
-<p>$P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$</p>
-</blockquote>
-<p>   其中，$B_1,B_2,…,B_n​$是样本空间$S​$的一个<strong>划分</strong>，所谓划分是指，$B_1…B_n​$将$S​$完全划分且互相不重叠。全概率公式可以用一个图来清晰的表示：</p>
-<blockquote>
-<p><img src="https://raw.githubusercontent.com/xiashaopeng/picturesStorage/master/dir/1.png" alt=""></p>
-</blockquote>
-<p>另外，正如图中所述，在运用全概率公式时，关键是构造合适的划分。</p>
-<h3 id="2-贝叶斯公式"><a href="#2-贝叶斯公式" class="headerlink" title="2. 贝叶斯公式"></a>2. 贝叶斯公式</h3><p>   定理：设$B_1,B_2,…,B_n$为$S$的一个划分，且$P(B_i)&gt;0$。对$P(A)&gt;0$有<strong>Bayes公式</strong>：</p>
-<blockquote>
-<p>$P(B_i|A)=\frac{P(A|B_i)P(B_i)}{\sum_{j=1}^n P(A|B_j)P(B_j)}=\frac{p_iq_i}{\sum_{j=1}^np_jq_j}$</p>
-</blockquote>
-<h3 id="3-算例分析"><a href="#3-算例分析" class="headerlink" title="3. 算例分析"></a>3. 算例分析</h3><ul>
-<li><p><strong>例1： 有甲乙两盒，甲盒有3个红球，2个白球；乙盒有2个红球，1个白球。先从甲盒中采用不放回抽样取3个球放入乙盒，再从乙盒中取一个球，求取到的是红球的概率。</strong></p>
-<p><em>解析：该问题是一个典型的全概率公式的应用场景，即已知条件概率求总概率。</em></p>
-<p>事件$A$: 在乙盒中取到红球；<br>事件$B$: 从甲盒取出三个球到乙盒；</p>
-<pre><code>其中，事件$B$可以做划分：
-事件$B_1$: 取出的三个均为红球； $P(B_1)=\frac{1}{C_5^3}=\frac{1}{10}$
-事件$B_2$: 取出2个红球，1个白球；$P(B_2)=\frac{C_3^2*C_2^1}{C_5^3}=\frac{3}{5}$
-事件$B_3$: 取出1个红球，2个白球；$P(B_3)=\frac{C_3^1*C_2^2}{C_5^3}=\frac{3}{10}$
-</code></pre><p>另外，在明确事件B的各个划分后，A相对与$B_i$的条件概率可以分别求出<br>$P(A|B_1) = \frac{5}{6}$, $P(A|B_2) = \frac{2}{3}$, $P(A|B_3) = \frac{1}{2}$,</p>
-<p>因此，最后根据全概率公式，我们可以得到A发生的概率为<br>$P(A) = P(A|B_1)P(B_1) +P(A|B_2)P(B_2)+P(A|B_3)P(B_3)=\frac{19}{30}$</p>
-</li>
-<li><p><strong>例2: 根据以往的临床记录，某种诊断癌症的试验具有5%的假阳性及3%的假阴性：<br>若设A={试验反应是阳性}，C={被诊断患有癌症}，则有：$P(A|\overline{C})=5\%$, $P(\overline{A}|C)=3\%$<br>已知某一群体$P(C)=0.005$，问这种方法能否用于普查？</strong></p>
-<p><em>解析：该问题是典型的Balyers公式的应用场景，问题的意思是要求求解诊断正确的概率，即求解$P(C|A)$</em></p>
-<p>根据Balyers公式，则有$P(C|A)=\frac{P(C)<em>P(A|C)}{P(A|C)</em>P(C) + P({A}|\overline{C})*P(\overline{C})}$。其中，$P(C)=0.005$，$P(\overline{C})=0.995$，$P(A|\overline{C})=0.05$，$P(A|C)=0.97$，带入上述Balyers公式，可得最终结果$P(C|A)=0.089=8.9\%$，这意味着确诊癌症的正确性只有8.9%，说明该方法在该群体中无法用于普查。</p>
-</li>
+        <p>(摘自 $cn.Wikipedia$ ，用于自己的学习归纳)</p>
+<h2 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h2><p>“机器学习是人工智能的一个分支。人工智能的研究历史有着一条从以“推理”为重点，到以“知识”为重点，再到以“学习”为重点的自然、清晰的脉络。显然，机器学习是实现人工智能的一个途径，即以机器学习为手段解决人工智能中的问题。机器学习在近30多年已发展为一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、计算复杂性理论等多门学科。机器学习理论主要是设计和分析一些让计算机可以自动“学习”的算法。机器学习算法是一类从数据中自动分析获得规律，并利用规律对未知数据进行预测的算法。<strong>因为学习算法中涉及了大量的统计学理论，机器学习与推断统计学联系尤为密切，也被称为统计学习理论。</strong> 算法设计方面，机器学习理论关注可以实现的，行之有效的学习算法。很多推论问题属于无程序可循难度，所以部分的机器学习研究是开发容易处理的近似算法。”</p>
+<h2 id="机器学习的定义"><a href="#机器学习的定义" class="headerlink" title="机器学习的定义"></a>机器学习的定义</h2><p>机器学习有下面几种定义：</p>
+<ul>
+<li>机器学习是一门人工智能的科学，该领域的主要研究对象是人工智能，特别是如何在经验学习中改善具体算法的性能。</li>
+<li>机器学习是对能通过经验自动改进的计算机算法的研究。</li>
+<li>机器学习是用数据或以往的经验，以此优化计算机程序的性能标准。<br>一种经常引用的英文定义是：<em>A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.</em></li>
 </ul>
-<hr>
-<h2 id="独立事件"><a href="#独立事件" class="headerlink" title="独立事件"></a>独立事件</h2><p><strong>两两独立</strong>并不等价于<strong>相互独立</strong><br><strong>实际推断原理</strong>：对于概率很小的事件，单次试验中几乎是不发生的。</p>
-<font color="red" size="3" face="黑体"><strong>待补充</strong></font>
+<p>简单地说，<strong>机器学习是将无序数据转换为有用的信息。</strong></p>
+<h2 id="机器学习的分类"><a href="#机器学习的分类" class="headerlink" title="机器学习的分类"></a>机器学习的分类</h2><p>机器学习可以分成下面几种类别：</p>
+<ul>
+<li>监督学习从给定的训练数据集中学习出一个函数，当新的数据到来时，可以根据这个函数预测结果。监督学习的训练集要求是包括输入和输出，也可以说是特征和目标。训练集中的目标是由人标注的。常见的监督学习算法包括回归分析和统计分类。</li>
+</ul>
+<p>监督学习和非监督学习的差别就是训练集目标是否人标注。他们都有训练集 且都有输入和输出</p>
+<ul>
+<li>无监督学习与监督学习相比，训练集没有人为标注的结果。常见的无监督学习算法有生成对抗网络（GAN）、聚类。</li>
+<li>半监督学习介于监督学习与无监督学习之间。</li>
+<li>增强学习通过观察来学习做成如何的动作。每个动作都会对环境有所影响，学习对象根据观察到的周围环境的反馈来做出判断。</li>
+</ul>
+<h2 id="机器学习算法"><a href="#机器学习算法" class="headerlink" title="机器学习算法"></a>机器学习算法</h2><p>具体的机器学习算法有：</p>
+<p>构造间隔理论分布：聚类分析和模式识别</p>
+<ul>
+<li>人工神经网络</li>
+<li>决策树</li>
+<li>感知器</li>
+<li>支持向量机</li>
+<li>集成学习AdaBoost</li>
+<li>降维与度量学习</li>
+<li>聚类</li>
+<li>贝叶斯分类器</li>
+</ul>
+<p>构造条件概率：回归分析和统计分类</p>
+<ul>
+<li>高斯过程回归</li>
+<li>线性判别分析</li>
+<li>最近邻居法</li>
+<li>径向基函数核</li>
+</ul>
+<p>通过再生模型构造概率密度函数：</p>
+<ul>
+<li>最大期望算法</li>
+<li>概率图模型：包括贝叶斯网和Markov随机场</li>
+<li>Generative Topographic Mapping</li>
+</ul>
+<p>近似推断技术：</p>
+<ul>
+<li>马尔可夫链</li>
+<li>蒙特卡罗方法</li>
+<li>变分法</li>
+<li>最优化：大多数以上方法，直接或者间接使用最优化算法。</li>
+</ul>
 
-<hr>
-<h2 id="离散型随机变量"><a href="#离散型随机变量" class="headerlink" title="离散型随机变量"></a>离散型随机变量</h2><h3 id="二项分布"><a href="#二项分布" class="headerlink" title="二项分布"></a>二项分布</h3><h3 id="泊松分布"><a href="#泊松分布" class="headerlink" title="泊松分布"></a>泊松分布</h3><font color="red" size="3" face="黑体"><strong>待补充</strong></font>
-
-<hr>
-<h2 id="概率分布函数"><a href="#概率分布函数" class="headerlink" title="概率分布函数"></a>概率分布函数</h2><font color="red" size="3" face="黑体"><strong>待补充</strong></font>
       
     </div>
     
@@ -417,7 +430,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/math/" rel="tag"># math</a>
+            <a href="/tags/machine-learning/" rel="tag"># machine learning</a>
           
         </div>
       
@@ -430,8 +443,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/uncategorized/2018/08/30/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/数学拾遗/2018/08/30/概率论与数理统计拾遗/" rel="next" title="概率论与数理统计拾遗">
+                <i class="fa fa-chevron-left"></i> 概率论与数理统计拾遗
               </a>
             
           </div>
@@ -440,8 +453,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/机器学习/2018/09/03/机器学习之监督学习/" rel="prev" title="机器学习简介">
-                机器学习简介 <i class="fa fa-chevron-right"></i>
+              <a href="/机器学习/2018/09/05/神经网络/" rel="prev" title="神经网络">
+                神经网络 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -576,7 +589,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#全概率公式与贝叶斯公式（古典概型）"><span class="nav-number">1.</span> <span class="nav-text">全概率公式与贝叶斯公式（古典概型）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-全概率公式"><span class="nav-number">1.1.</span> <span class="nav-text">1. 全概率公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-贝叶斯公式"><span class="nav-number">1.2.</span> <span class="nav-text">2. 贝叶斯公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-算例分析"><span class="nav-number">1.3.</span> <span class="nav-text">3. 算例分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#独立事件"><span class="nav-number">2.</span> <span class="nav-text">独立事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#离散型随机变量"><span class="nav-number">3.</span> <span class="nav-text">离散型随机变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二项分布"><span class="nav-number">3.1.</span> <span class="nav-text">二项分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#泊松分布"><span class="nav-number">3.2.</span> <span class="nav-text">泊松分布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概率分布函数"><span class="nav-number">4.</span> <span class="nav-text">概率分布函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是机器学习"><span class="nav-number">1.</span> <span class="nav-text">什么是机器学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习的定义"><span class="nav-number">2.</span> <span class="nav-text">机器学习的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习的分类"><span class="nav-number">3.</span> <span class="nav-text">机器学习的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习算法"><span class="nav-number">4.</span> <span class="nav-text">机器学习算法</span></a></li></ol></div>
             
 
           </div>
